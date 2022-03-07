@@ -4,6 +4,7 @@
     "description": "For those who like to write shorter code, as well as those who are nostalgic for the days of popularity of jQuery",
     "main": "index.js",
     "module": "index-esm.js",
+    "types": "index.d.ts",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/JoCat/easy-query.git"

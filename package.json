@@ -1,6 +1,6 @@
 {
     "name": "easy-query",
-    "version": "0.9.0",
+    "version": "1.0.0",
     "description": "For those who like to write shorter code, as well as those who are nostalgic for the days of popularity of jQuery",
     "main": "index.js",
     "module": "index-esm.js",

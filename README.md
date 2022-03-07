@@ -4,6 +4,17 @@
 
 For those who like to write shorter code, as well as those who are nostalgic for the days of popularity of jQuery
 
+Connect example:
+```html
+<script src="https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index.js"></script>
+```
+or use ESM
+```html
+<script type="module">
+  import { $, $a } from "https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index-esm.js";
+</script>
+```
+
 Usage example:
 ```js
 const element = $('.element');
@@ -33,6 +44,17 @@ const childElements = parent.querySelectorAll('.child');
 ### Обёртки над функциями querySelector и querySelectorAll
 
 Для любителей писать более короткий код, а также тех, кто ностальгирует по временам популярности JQuery
+
+Пример подключения:
+```html
+<script src="https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index.js"></script>
+```
+с использованием модулей ESM
+```html
+<script type="module">
+  import { $, $a } from "https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index-esm.js";
+</script>
+```
 
 Пример использования:
 ```js

@@ -45,7 +45,7 @@ const childElements = parent.querySelectorAll('.child');
 
 // or equivalent from jQuery
 
-const parent = $('.parent')[0];
+const parent = $($('.parent')[0]);
 const childElement = parent.find('.child')[0];
 const childElements = parent.find('.child');
 ```
@@ -97,7 +97,7 @@ const childElements = parent.querySelectorAll('.child');
 
 // или аналог из JQuery
 
-const parent = $('.parent')[0];
+const parent = $($('.parent')[0]);
 const childElement = parent.find('.child')[0];
 const childElements = parent.find('.child');
 ```

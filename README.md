@@ -24,6 +24,11 @@ const list = $a('.parent .child');
 
 const element = document.querySelector('.element');
 const list = document.querySelectorAll('.parent .child');
+
+// or equivalent from jQuery
+
+const element = $('.element')[0];
+const list = $('.parent .child');
 ```
 
 Also, if you need to search for an element in another element, you can use the following option:
@@ -37,6 +42,12 @@ const childElements = $a('.child', parent);
 const parent = document.querySelector('.parent');
 const childElement = parent.querySelector('.child');
 const childElements = parent.querySelectorAll('.child');
+
+// or equivalent from jQuery
+
+const parent = $('.parent')[0];
+const childElement = parent.find('.child')[0];
+const childElements = parent.find('.child');
 ```
 
 ---
@@ -65,6 +76,11 @@ const list = $a('.parent .child');
 
 const element = document.querySelector('.element');
 const list = document.querySelectorAll('.parent .child');
+
+// или аналог из JQuery
+
+const element = $('.element')[0];
+const list = $('.parent .child');
 ```
 
 Также в случае необходимости искать элемент в другом элементе, можно воспользоваться следующим вариантом:
@@ -78,4 +94,10 @@ const childElements = $a('.child', parent);
 const parent = document.querySelector('.parent');
 const childElement = parent.querySelector('.child');
 const childElements = parent.querySelectorAll('.child');
+
+// или аналог из JQuery
+
+const parent = $('.parent')[0];
+const childElement = parent.find('.child')[0];
+const childElements = parent.find('.child');
 ```

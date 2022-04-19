@@ -1,103 +1,83 @@
-# easy-query
+# Easy Query
 
-### Wrappers for the querySelector and querySelectorAll functions
+![MIT License](https://badgen.net/github/license/jocat/easy-query)
+![Version](https://badgen.net/npm/v/@jocat/easy-query)
+![Dependents](https://badgen.net/npm/dependents/@jocat/easy-query)
+![Types](https://badgen.net/npm/types/@jocat/easy-query)
+![Package size](https://badgen.net/packagephobia/publish/@jocat/easy-query)
+![Minified size](https://badgen.net/bundlephobia/min/@jocat/easy-query)
+![Minzipped size](https://badgen.net/bundlephobia/minzip/@jocat/easy-query)
+
+## Wrappers for the querySelector and querySelectorAll functions
+
+> _Tiny, simple, zero-dependency_
 
 For those who like to write shorter code, as well as those who are nostalgic for the days of popularity of jQuery
 
-Connect example:
-```html
-<script src="https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index.js"></script>
-```
-or use ESM
-```html
-<script type="module">
-  import { $, $a } from "https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index-esm.js";
-</script>
-```
-
-Usage example:
-```js
-const element = $('.element');
-const list = $a('.parent .child');
-
-// Instead of
-
-const element = document.querySelector('.element');
-const list = document.querySelectorAll('.parent .child');
-
-// or equivalent from jQuery
-
-const element = $('.element')[0];
-const list = $('.parent .child');
-```
-
-Also, if you need to search for an element in another element, you can use the following option:
-```js
-const parent = $('.parent');
-const childElement = $('.child', parent);
-const childElements = $a('.child', parent);
-
-// Instead of
-
-const parent = document.querySelector('.parent');
-const childElement = parent.querySelector('.child');
-const childElements = parent.querySelectorAll('.child');
-
-// or equivalent from jQuery
-
-const parent = $($('.parent')[0]);
-const childElement = parent.find('.child')[0];
-const childElements = parent.find('.child');
-```
-
 ---
 
-### Обёртки над функциями querySelector и querySelectorAll
+### Install, download or import
 
-Для любителей писать более короткий код, а также тех, кто ностальгирует по временам популярности JQuery
+**Install:** `npm i @jocat/easy-query`
 
-Пример подключения:
-```html
-<script src="https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index.js"></script>
+**and use:**
+
+```js
+import { $, $a } from "@jocat/easy-query";
 ```
-с использованием модулей ESM
+
+**Download**: [jsdelivr](https://cdn.jsdelivr.net/npm/@jocat/easy-query/) / [unpkg](https://unpkg.com/@jocat/easy-query/)
+
+**or use CDN:**
+
+```html
+<script src="https://cdn.jsdelivr.net/npm/@jocat/easy-query@1.0.0/index.js"></script>
+```
+
+**import as ESM:**
+
 ```html
 <script type="module">
-  import { $, $a } from "https://cdn.jsdelivr.net/gh/JoCat/easy-query@1.0/index-esm.js";
+    import {
+        $,
+        $a,
+    } from "https://cdn.jsdelivr.net/npm/@jocat/easy-query@1.0.0/index-esm.js";
 </script>
 ```
 
-Пример использования:
+### Usage
+
 ```js
-const element = $('.element');
-const list = $a('.parent .child');
+const element = $(".element");
+const list = $a(".parent .child");
 
-// Вместо
+// Instead of
 
-const element = document.querySelector('.element');
-const list = document.querySelectorAll('.parent .child');
+const element = document.querySelector(".element");
+const list = document.querySelectorAll(".parent .child");
 
-// или аналог из JQuery
+// or equivalent from jQuery
 
-const element = $('.element')[0];
-const list = $('.parent .child');
+const element = $(".element")[0];
+const list = $(".parent .child");
 ```
 
-Также в случае необходимости искать элемент в другом элементе, можно воспользоваться следующим вариантом:
+Also, if you need to find an element within another element, you can use the following:
+
 ```js
-const parent = $('.parent');
-const childElement = $('.child', parent);
-const childElements = $a('.child', parent);
+const parent = $(".parent");
+const childElement = $(".child", parent);
+const childElements = $a(".child", parent);
 
-// Вместо
+// Instead of
 
-const parent = document.querySelector('.parent');
-const childElement = parent.querySelector('.child');
-const childElements = parent.querySelectorAll('.child');
+const parent = document.querySelector(".parent");
+const childElement = parent.querySelector(".child");
+const childElements = parent.querySelectorAll(".child");
 
-// или аналог из JQuery
+// or equivalent from jQuery
 
-const parent = $($('.parent')[0]);
-const childElement = parent.find('.child')[0];
-const childElements = parent.find('.child');
+const parent = $($(".parent")[0]);
+const childElement = parent.find(".child")[0];
+const childElements = parent.find(".child");
 ```

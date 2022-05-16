@@ -2,7 +2,7 @@
 
 ![MIT License](https://badgen.net/github/license/jocat/easy-query)
 ![Version](https://badgen.net/npm/v/@jocat/easy-query)
-![Dependents](https://badgen.net/npm/dependents/@jocat/easy-query)
+![Dependency count](https://badgen.net/bundlephobia/dependency-count/@jocat/easy-query)
 ![Types](https://badgen.net/npm/types/@jocat/easy-query)
 ![Package size](https://badgen.net/packagephobia/publish/@jocat/easy-query)
 ![Minified size](https://badgen.net/bundlephobia/min/@jocat/easy-query)
@@ -31,7 +31,7 @@ import { $, $a } from "@jocat/easy-query";
 **or use CDN:**
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/@jocat/easy-query@1.0.0/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@jocat/easy-query/index.js"></script>
 ```
 
 **import as ESM:**
@@ -41,7 +41,7 @@ import { $, $a } from "@jocat/easy-query";
     import {
         $,
         $a,
-    } from "https://cdn.jsdelivr.net/npm/@jocat/easy-query@1.0.0/index-esm.js";
+    } from "https://cdn.jsdelivr.net/npm/@jocat/easy-query/index-esm.js";
 </script>
 ```
 

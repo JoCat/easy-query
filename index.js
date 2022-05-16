@@ -1,2 +1,1 @@
-const $ = (selectors, parent = document) => parent.querySelector(selectors);
-const $a = (selectors, parent = document) => parent.querySelectorAll(selectors);
+const $=(s,p=document)=>p.querySelector(s),$a=(s,p=document)=>p.querySelectorAll(s);
